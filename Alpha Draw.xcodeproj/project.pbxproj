@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15703C2F245427AC00D1434E /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15703C2D245427AC00D1434E /* Canvas.swift */; };
+		15703C30245427AC00D1434E /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15703C2E245427AC00D1434E /* Line.swift */; };
+		15703C322454292700D1434E /* DrawLetterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15703C312454292700D1434E /* DrawLetterVC.swift */; };
 		15A7880D24534AB40015FE80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7880C24534AB40015FE80 /* AppDelegate.swift */; };
 		15A7880F24534AB40015FE80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7880E24534AB40015FE80 /* SceneDelegate.swift */; };
 		15A7881124534AB40015FE80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7881024534AB40015FE80 /* ViewController.swift */; };
@@ -57,6 +60,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15703C2D245427AC00D1434E /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		15703C2E245427AC00D1434E /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		15703C312454292700D1434E /* DrawLetterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLetterVC.swift; sourceTree = "<group>"; };
 		15A7880924534AB40015FE80 /* Alpha Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alpha Draw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A7880C24534AB40015FE80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15A7880E24534AB40015FE80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +125,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15703C2C2454277900D1434E /* DrawDetails */ = {
+			isa = PBXGroup;
+			children = (
+				15703C2D245427AC00D1434E /* Canvas.swift */,
+				15703C2E245427AC00D1434E /* Line.swift */,
+				15703C312454292700D1434E /* DrawLetterVC.swift */,
+			);
+			path = DrawDetails;
+			sourceTree = "<group>";
+		};
 		15A7880024534AB40015FE80 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +178,7 @@
 		15A788292453519A0015FE80 /* Draw */ = {
 			isa = PBXGroup;
 			children = (
+				15703C2C2454277900D1434E /* DrawDetails */,
 				15A7882124534FE30015FE80 /* Draw.storyboard */,
 				15A788232453512E0015FE80 /* AlphabetCollectionVC.swift */,
 				15A788252453517A0015FE80 /* AlphabetCell.swift */,
@@ -336,7 +353,10 @@
 				15A7881124534AB40015FE80 /* ViewController.swift in Sources */,
 				15A7880D24534AB40015FE80 /* AppDelegate.swift in Sources */,
 				15A7880F24534AB40015FE80 /* SceneDelegate.swift in Sources */,
+				15703C322454292700D1434E /* DrawLetterVC.swift in Sources */,
 				15A788242453512E0015FE80 /* AlphabetCollectionVC.swift in Sources */,
+				15703C30245427AC00D1434E /* Line.swift in Sources */,
+				15703C2F245427AC00D1434E /* Canvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

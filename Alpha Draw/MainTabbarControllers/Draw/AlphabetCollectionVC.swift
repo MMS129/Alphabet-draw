@@ -91,6 +91,15 @@ class AlphabetCollectionVC: UIViewController {
         player?.play()
     }
     
+    func startDrawing(letter:String)
+    {
+        let sb = UIStoryboard(name: "Draw", bundle: nil)
+        
+        let drawVC = sb.instantiateViewController(withIdentifier: "DrawLetterVC") as! DrawLetterVC
+        drawVC.drawingLetter = letter
+        self.navigationController?.pushViewController(drawVC, animated: true)
+    }
+    
 
 }
 
@@ -112,9 +121,10 @@ extension AlphabetCollectionVC : UICollectionViewDelegate,UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let letter = alphabetList[indexPath.row]
+        startDrawing(letter: letter)
         
-        let audioSound = letter.lowercased()
-        playSound(filename: audioSound, fileExtension: "mp3")
+//        let audioSound = letter.lowercased()
+//        playSound(filename: audioSound, fileExtension: "mp3")
         
         collectionView.deselectItem(at: indexPath, animated: true)
         

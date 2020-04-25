@@ -8,9 +8,16 @@
 
 import UIKit
 
+protocol LetterCellDelegate {
+    func drawClicked(letter:String)
+}
+
 class AlphabetCell: UICollectionViewCell {
 
     @IBOutlet var letterName: UILabel!
+    
+    var letterDelegate:LetterCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
